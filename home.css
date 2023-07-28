@@ -1,0 +1,189 @@
+.body2 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 310px 130px 60px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    margin:30px;
+  }
+  .card-image {
+    grid-area: image;
+    background: no-repeat center / contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size:contain;
+  }
+  .card-text {
+    grid-area: text;
+    margin: 15px;
+  }
+  .card-text .author {
+    color: rgb(169, 162, 144);
+    font-size:13px;
+  }
+  .card-text p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-stats {
+    grid-area: stats; 
+    display: grid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(96, 93, 84);
+  }
+  .card-stats .stat {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  .card-stats .border {
+    border: 1px solid rgb(212, 211, 175);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .card-stats .value{
+    font-size:22px;
+    font-weight: 500;
+  }
+  .card-stats .value sup{
+    font-size:12px;
+  }
+  .card-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .content-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  header {
+    border-bottom: 1px solid #EEEEEE;
+  }
+  div#wrapperHeader {
+    width: 70%;;
+    height:100px; /* height of the background image? */
+    text-align:left;
+     }
+     
+     div#wrapperHeader div#header_img {
+    width:1000px;
+    height:200px;
+    margin:0 auto;
+     }
+     
+     div#wrapperHeader div#header_img img {
+    width: 140px;; /* the width of the logo image */
+    height: 120px;; /* the height of the logo image */
+    margin:0 auto;
+  
+     }
+
+  header .content-wrapper {
+    display: flex;
+    
+  }
+  header h1 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+  }
+  header nav , .nav {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav a ,.nav{
+    text-decoration: none;
+    color: #555555;
+    padding: 10px 10px;
+    margin: 0 10px;
+  }
+  header nav a:hover {
+    border-bottom: 1px solid #aaa;
+  }
+  header .link-icons {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  header .link-icons a {
+    text-decoration: none;
+    color: #394352;
+    padding: 0 10px;
+  }
+  header .link-icons a:hover {
+    color: #4e5c70;
+  }
+  header .link-icons a i {
+    font-size: 18px;
+  }
+  header .link-icons a span {
+    display: inline-block;
+    text-align: center;
+    background-color: #63748e;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 22px;
+    right: 0;
+  }
+
+  .form-head button {
+    display: inline-block;
+    font : "Prata";
+    text-align: center;
+    background-color:#F3F2EC;
+    color: #4e5c70;
+    font-size: 14px;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    font-weight: bold;
+    position: flex;
+   
+  }
+  .form-head button:hover {
+    color: #4e5c70;
+    cursor: pointer;
+    text-decoration: underline;
+  }  
